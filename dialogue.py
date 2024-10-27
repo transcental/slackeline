@@ -154,7 +154,7 @@ SCHEDULED = [
                     "icon_emoji": ":celeste-mom-normal00:",
                     "username": "Mum",
                     "messages": [
-                        "Dillan, be sure to ask your friends a question to _make some new pals_!",
+                        "Amber, be sure to ask your friends a question to _make some new pals_!",
                     ],
                 }
             ],
@@ -163,7 +163,7 @@ SCHEDULED = [
                     "icon_emoji": ":celeste-mom-normal01:",
                     "username": "Mum",
                     "messages": [
-                        "Dillan, do you know what time it is? It's *question-asking time*!",
+                        "Amber, do you know what time it is? It's *question-asking time*!",
                     ],
                 }
             ],
@@ -177,7 +177,7 @@ SCHEDULED = [
                     "icon_emoji": ":distracteline:",
                     "username": "Madeline",
                     "messages": [
-                        "Hey Dillan.... what have you <https://hackclub.slack.com/archives/C06R5NKVCG5/p1723232934471779|been up to> today?"
+                        "Hey Amber.... what have you <https://hackclub.slack.com/archives/C06R5NKVCG5/p1723232934471779|been up to> today?"
                     ],
                 }
             ],
@@ -186,7 +186,7 @@ SCHEDULED = [
                     "icon_emoji": ":unimpressedbirb:",
                     "username": "Bird",
                     "messages": [
-                        "_*SQUAWK SQUAWK* it's time for your <https://hackclub.slack.com/archives/C06R5NKVCG5/p1723232934471779|daily breakdown>, Dillan_",
+                        "_*SQUAWK SQUAWK* it's time for your <https://hackclub.slack.com/archives/C06R5NKVCG5/p1723232934471779|daily breakdown>, Amber",
                     ],
                 }
             ],
