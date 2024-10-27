@@ -186,7 +186,7 @@ SCHEDULED = [
                     "icon_emoji": ":unimpressedbirb:",
                     "username": "Bird",
                     "messages": [
-                        "_*SQUAWK SQUAWK* it's time for your <https://hackclub.slack.com/archives/C06R5NKVCG5/p1723232934471779|daily breakdown>, Amber",
+                        "_*SQUAWK SQUAWK* it's time for your <https://hackclub.slack.com/archives/C06R5NKVCG5/p1723232934471779|daily breakdown>, Amber_",
                     ],
                 }
             ],
