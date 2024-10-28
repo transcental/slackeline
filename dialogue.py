@@ -177,7 +177,7 @@ SCHEDULED = [
                     "icon_emoji": ":distracteline:",
                     "username": "Madeline",
                     "messages": [
-                        "Hey Amber.... what have you <https://hackclub.slack.com/archives/C06R5NKVCG5/p1723232934471779|been up to> today?"
+                        "Hey Amber.... what have you been up to today?"
                     ],
                 }
             ],
@@ -186,7 +186,7 @@ SCHEDULED = [
                     "icon_emoji": ":unimpressedbirb:",
                     "username": "Bird",
                     "messages": [
-                        "_*SQUAWK SQUAWK* it's time for your <https://hackclub.slack.com/archives/C06R5NKVCG5/p1723232934471779|daily breakdown>, Amber_",
+                        "_*SQUAWK SQUAWK* it's time for your daily breakdown, Amber_",
                     ],
                 }
             ],
