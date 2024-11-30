@@ -1,8 +1,10 @@
 from dotenv import load_dotenv
 from slack_bolt import App
+from slack_sdk import WebClient
 from dialogue import WELCOME
 from events.phone import send_phone_message
 from views.home import generate_home_view
+from views.answer import generate_view as generate_answer_view
 from .sequences import run_sequence
 from .airtable import airtable
 import os
@@ -65,6 +67,19 @@ def update_home_tab(client, event, logger):
 
 
 @app.action("submit_phone_call")
+@app.view("answer_call")
 def handle_phone_submit(ack, body, client):
     ack()
     send_phone_message(body, client, airtable)
+
+
+@app.shortcut("respond_to_call")
+def respond_to_call(ack, body, client: WebClient):
+    ack()
+    ts = body["message"]["thread_ts"]
+    channel_id = body["channel"]["id"]
+    view = generate_answer_view(ts, channel_id)
+    client.views_open(
+        trigger_id=body["trigger_id"],
+        view=view
+    )

@@ -1,7 +1,4 @@
-import json
-
 BLACKLISTED_CHANNELS = []
-
 
 def send_phone_message(body, client, airtable):
     user_id = body["user"]["id"]
@@ -12,10 +9,13 @@ def send_phone_message(body, client, airtable):
     if (not user_data['fields'].get('Allowed to Phone') and not user_data['fields'].get('Admin')):
         client.chat_postMessage(channel=user_id, text="You are not allowed to use this feature.")
         return
+    
+    if body['view'].get("private_metadata"):
+        ts, location = body["view"]["private_metadata"].split(";")
+    else:
+        ts = None
+        location = body["view"]["state"]["values"]["conversations_select"]["conversations_select-action"]["selected_conversation"]
 
-    location = body["view"]["state"]["values"]["conversations_select"][
-        "conversations_select-action"
-    ]["selected_conversation"]
     message = body["view"]["state"]["values"]["message_input"]["message_input"]["value"]
     emoji = body["view"]["state"]["values"]["emoji"]["emoji"]["value"]
     username = body["view"]["state"]["values"]["username"]["username"]["value"]
@@ -27,6 +27,6 @@ def send_phone_message(body, client, airtable):
     #         print("Not in channel, joining")
     #         client.conversations_invite(channel=location, users="U07JRF405L1")
 
-    client.chat_postMessage(channel=location, text=message, icon_emoji=emoji, username=username)
+    client.chat_postMessage(channel=location, text=message, icon_emoji=emoji, username=username, thread_ts=ts)
     if location in BLACKLISTED_CHANNELS:
         client.chat_postMessage(channel=user_id, text="Nice try")
