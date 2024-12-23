@@ -76,7 +76,7 @@ def handle_phone_submit(ack, body, client):
 @app.shortcut("respond_to_call")
 def respond_to_call(ack, body, client: WebClient):
     ack()
-    ts = body["message"]["thread_ts"]
+    ts = body["message"]["ts"]
     channel_id = body["channel"]["id"]
     view = generate_answer_view(ts, channel_id)
     client.views_open(
