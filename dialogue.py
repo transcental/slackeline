@@ -121,6 +121,39 @@ WELCOME = [
             "messages": ["That's gonna make things a lot easier! Thanks, birdie."],
             "wait_for": "end-of-welcome",
         },
+    ],[
+        {
+            "icon_emoji": ":neodog_floof:",
+            "username": "Neodog",
+            "messages": [
+                "Wrrf, wrrf! wrrf, WRRF (user_mention)!! _wrrf_",
+                "Wrrf! (user_mention), wrrf! Wrrf! _Wrrrrrrf!_"
+            ],
+        },
+        {
+            "icon_emoji": ":neocat_floof:",
+            "username": "Neocat",
+            "messages": [
+                "Mrrw, mrrow, meow, mrrow",
+                "meow, mrow, mrrw, mrrow",
+            ]
+        },
+        {
+            "icon_emoji": ":neodog_floof:",
+            "username": "Neodog",
+            "messages": [
+                "Welcome to the mine (user_mention)!! _welcome_",
+                "Greetings! (user_mention), welcome! _Welcome!_"
+            ]
+        },
+        {
+            "icon_emoji": ":neocat_floof:",
+            "username": "Neocat",
+            "messages": [
+                "Another servant to the mines has arrived.",
+                "Amber, gold, shining pearls, those minerals you shall mine...",
+            ]
+        }
     ]
 ]
 
