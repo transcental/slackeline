@@ -225,4 +225,56 @@ SCHEDULED = [
             ],
         ],
     },
+    {
+         "cron": "0 10 25 12 *",
+         "sequences": [
+             [
+                 {
+                        "icon_emoji": ":flyingbirb:",
+                        "username": "Bird",
+                        "messages": [
+                            "_*SQUAWK SQUAWK*_ Merry Christmas everyone!",
+                        ],
+                    },
+                    {
+                        "icon_emoji": ":celeste-madeline-peaceful00:",
+                        "username": "Madeline",
+                        "messages": [
+                            "Merry Christmas, Amber!"
+                        ],
+                 }
+             ],
+             [
+                 {
+                     "icon_emoji": ":neocat_santa:",
+                        "username": "Neocat",
+                        "messages": [
+                            "Merry Christmas, Amber! :3"
+                        ],
+                 },
+                    {
+                        "icon_emoji": ":neodog_santa:",
+                            "username": "Neodog",
+                            "messages": [
+                                "_Wrrf, wrrf!_ Merry Christmas, Amber! :3"
+                            ],
+                    }
+             ],
+             [{
+                 "icon_emoji": ":neodog_santa:",
+                    "username": "Neodog",
+                    "messages": [
+                        "_Wrrf, wrrf!_ Merry Christmas, Amber! :3"
+                    ],
+             },
+                {
+                    "icon_emoji": ":neocat_santa:",
+                        "username": "Neocat",
+                        "messages": [
+                            "Merry Christmas, Amber! >:3"
+                        ],
+                }
+             ]
+         ]
+    }
 ]
