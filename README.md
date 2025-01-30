@@ -1,6 +1,6 @@
 # Slackeline
 
-Slackeline is a bot for my personal channel in the Hack Club Slack, [#dillan-waffles](https://hackclub.slack.com/archives/C06R5NKVCG5). The name comes from the Madeline who is the protaganist in Celeste, my favourite game - an indie puzzle platformer.
+Slackeline is a bot for my personal channel in the Hack Club Slack, [#ambers-mine](https://hackclub.slack.com/archives/C06R5NKVCG5). The name comes from the Madeline who is the protaganist in Celeste, my favourite game - an indie puzzle platformer.
 
 Currently, Slackeline only welcomes people and can run scheduled messages but I plan to add more functionality to increase channel interaction! Stories, questions and mysteries are some things planned.
 
