@@ -37,7 +37,7 @@ def handle_member_left_channel(client, body, say):
         return
     client.chat_postMessage(
         channel="U054VC2KM9P",
-        text=f"<@{user_id}> just left {channel_id} :(",
+        text=f"<@{user_id}> just left <#{channel_id}> :(",
     )
 
 
