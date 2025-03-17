@@ -88,24 +88,46 @@ Here's an app manifest that has the necessary permissions:
 ```
 {
     "display_information": {
-        "name": "Madeline"
+        "name": "Slackeline",
+        "description": "Survive the journey across the mountain trail.",
+        "background_color": "#2f042f"
     },
     "features": {
+        "app_home": {
+            "home_tab_enabled": true,
+            "messages_tab_enabled": false,
+            "messages_tab_read_only_enabled": false
+        },
         "bot_user": {
             "display_name": "Madeline",
             "always_online": false
-        }
+        },
+        "shortcuts": [
+            {
+                "name": "Respond to call",
+                "type": "message",
+                "callback_id": "respond_to_call",
+                "description": "Opens a modal to respond to the message in character"
+            }
+        ]
     },
     "oauth_config": {
         "scopes": {
             "bot": [
                 "channels:read",
+                "channels:write.invites",
                 "chat:write",
+                "chat:write.customize",
+                "commands",
                 "groups:read",
+                "groups:write.invites",
+                "im:history",
+                "im:read",
                 "mpim:read",
+                "reactions:write",
                 "users.profile:read",
                 "users:read",
-                "chat:write.customize"
+                "groups:history"
             ]
         }
     },
@@ -113,7 +135,10 @@ Here's an app manifest that has the necessary permissions:
         "event_subscriptions": {
             "request_url": "URL",
             "bot_events": [
-                "member_joined_channel"
+                "app_home_opened",
+                "member_joined_channel",
+                "member_left_channel",
+                "message.im"
             ]
         },
         "interactivity": {

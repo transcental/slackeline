@@ -29,6 +29,18 @@ def handle_member_joined_channel(body, say):
     run_sequence(welcome_seq, app, body, say)
 
 
+@app.event("member_left_channel")
+def handle_member_left_channel(client, body, say):
+    channel_id = body["event"]["channel"]
+    user_id = body["event"]["user"]
+    if channel_id != CHANNEL_ID:
+        return
+    client.chat_postMessage(
+        channel="U054VC2KM9P",
+        text=f"<@{user_id}> just left {channel_id} :(",
+    )
+
+
 @app.event("message")
 def handle_message(body, say):
     # check if message is DM and that dillon is running it
