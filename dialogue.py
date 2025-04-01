@@ -276,5 +276,58 @@ SCHEDULED = [
                 }
              ]
          ]
+    },
+    {
+         "cron": "0 10 22 4 *",
+         "sequences": [
+             [
+                 {
+                        "icon_emoji": ":flyingbirb:",
+                        "username": "Bird",
+                        "messages": [
+                            "_*SQUAWK SQUAWK SQUAWK*_ Happy Slackversary Amber!",
+                        ],
+                    },
+                    {
+                        "icon_emoji": ":celeste-madeline-peaceful00:",
+                        "username": "Madeline",
+                        "messages": [
+                            "Woo, congrats! :D"
+                        ],
+                 }
+             ],
+             [
+                 {
+                     "icon_emoji": ":neocat_happy:",
+                        "username": "Neocat",
+                        "messages": [
+                            "OH MY GOD IT'S YOUR SLACKVERSARY, CONGRATULATIONS AMBER!!!!!!!!"
+                        ],
+                 },
+                    {
+                        "icon_emoji": ":neodog_happy:",
+                            "username": "Neodog",
+                            "messages": [
+                                "wow, another year on slack... it really does not feel like that long"
+                            ],
+                    }
+             ],
+             [{
+                 "icon_emoji": ":neodog_happy:",
+                    "username": "Neodog",
+                    "messages": [
+                        "_wow, amber! i can't believe it's been another year since you join the slack already"
+                    ],
+             },
+                {
+                    "icon_emoji": ":neocat_happy:",
+                        "username": "Neocat",
+                        "messages": [
+                            "WAIT WHAT?! IT'S HER SLACKVERSARY?!!! OMG OMG CONGRATS AMBER!!!!!"
+                        ],
+                }
+             ]
+         ]
     }
+
 ]
