@@ -26,6 +26,12 @@ def handle_member_joined_channel(body, say):
     if channel_id != CHANNEL_ID:
         return
     welcome_seq = random.choice(WELCOME)
+    invited_by = body["event"].get("inviter", "U054VC2KM9P")
+    user_id = body["event"]["user"]
+    app.client.chat_postMessage(
+        channel="U054VC2KM9P",
+        text=f"<@{user_id}> just joined <#{channel_id}>! :tada: Invited by <@{invited_by}>",
+    )
     run_sequence(welcome_seq, app, body, say)
 
 
@@ -94,4 +100,15 @@ def respond_to_call(ack, body, client: WebClient):
     client.views_open(
         trigger_id=body["trigger_id"],
         view=view
+    )
+
+
+@app.command("/joinamberschannel")
+def join_ambers_channel(ack, body, client):
+    ack()
+    user_id = body["user_id"]
+
+    client.conversations_invite(
+        channel=CHANNEL_ID,
+        users=user_id
     )
